@@ -1,5 +1,5 @@
 # Verilog simulation output 
 *.vcd 
-* .vvp 
-* .wlf 
+*.vvp 
+*.wlf 
 transcript 
