@@ -1,0 +1,39 @@
+see all git branches  or to find working branches
+git branch
+
+to see local + github branches
+git branch -add
+
+create branch from main
+git checkout main  -  first go to main branch
+git pull origin main - get the latest version from github
+git checkout -b [new-branch-name]  - dont put spaces between branchnamewords
+
+now you are on new branch
+now you want to push your new branch to github for that 
+git add
+git commit -m ""
+git push -u origin [your new branch name] - -u is useful for the first time because it connects the local branch to github branch
+
+after the first push you can push easyly git push
+
+create branch from another branch not main
+so first go to that branch 
+git checkout [branchname]
+git pull origin [branch name]
+git checkout -b [new branch name]
+
+
+how to merge to main[these are directly merging steps without pull request]
+
+
+//////one important thing before merging make sure your main is up to date/////
+
+git checkout main
+git pull origin main
+git merge [your branch name that want to push into the main]
+git push origin main                                  
+
+
+create a pull request by 
+git push -u origin [branch name]
