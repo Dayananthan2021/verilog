@@ -1,0 +1,5 @@
+# Verilog simulation output 
+*.vcd 
+* .vvp 
+* .wlf 
+transcript 

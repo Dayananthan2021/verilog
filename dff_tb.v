@@ -18,7 +18,7 @@ dff dut(
     .rstn(tb_rstn),
     .clk(tb_clk),
     .q(tb_q)
-)
+);
 
 //clock generation
 always 
@@ -27,8 +27,11 @@ always
 initial begin
    $dumpfile("dff_tb.vcd");
     $dumpvars(0, dff_tb);
-    tb_rstn = 1;
-    tb_d= 0;
+
+    //intial values
+    tb_clk = 1'b0;
+    tb_rstn = 1'b1;
+    tb_d= 1'b0;
     #12;
 
     tb_d = 1;
