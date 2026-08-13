@@ -19,3 +19,12 @@ by default numbers are decimal
 
 //unsized numbers 
 
+Unsized numbers - default number of bits are depending on the simulator and the machine typically 32 bits
+
+integer a = 5432; // no base format - by default treated as decimal
+integer b = 'h1AD7;// no size - defalut to machine with usually 32 bits
+
+reg [15:0] c = 16; //unsized decimal 16 assigned to 16 bit register // stored as 16'h0010
+
+Avoid unsized numbers in RTL code! Always specify size explicitly to prevent unexpected bit-width mismatches during synthesis.
+
