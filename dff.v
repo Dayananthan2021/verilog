@@ -1,13 +1,17 @@
 
 // Active low reset D filp flop design
 
-module dff(input d, rstn, clk,
-            output reg q);
+module dff(
+    input d,
+    input rstn, 
+    input clk,
+    output reg q
+    );
 
-always @(posedge clk)
+always @(posedge clk) // this one is synchronous reset if you want asynchronous reset (posedge clk or negedge rstn)
 begin
         if(!rstn)
-            q <= 0;
+            q <= 1'b0;
         else
             q <= d;
         end
