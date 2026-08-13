@@ -1,0 +1,22 @@
+git add
+git commit -m "[your commit comment]" - which basically save your snapshot of your project 
+
+git log --oneline    // we can see the all of the commits that we made but in local or remote i dont know it shows commit IDs
+
+Temporally visit older version 
+git checkout commit IDs
+
+comeback your current version
+git checkout [current branch name]  if worked on main then git checkout main
+
+Permanently store to older version (git revert)
+you dont delete history git creates a new commit that reverses the olderversion
+
+so first identify the commit
+git log --oneline
+git revert [commitID]
+
+then git push origin learning branch
+
+
+
